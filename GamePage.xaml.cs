@@ -103,6 +103,7 @@ namespace WpfApp1
                     MessageBox.Show("Wrong Guess");
                 }
                 GuessLeftBox.Text = guesses.ToString();
+                GuessedCharBox.Text = "";
                 return;
             }
             GuessedCharBox.Text = "";
@@ -131,6 +132,9 @@ namespace WpfApp1
                 return;
         }
 
-     
+        private void GuessedNameBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

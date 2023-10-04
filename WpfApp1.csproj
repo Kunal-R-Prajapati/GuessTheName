@@ -9,6 +9,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Assests\**" />
+    <EmbeddedResource Remove="Assests\**" />
+    <None Remove="Assests\**" />
+    <Page Remove="Assests\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="back2.png" />
+    <None Remove="Firefly a background image of size 800x450 px Which shows a night view of a Indian city with some sk %281%29.jpg" />
+    <None Remove="Firefly a background image of size 800x450 px Which shows a night view of a Indian city with some sk %284%29.jpg" />
     <None Remove="Neon Blue White and Black E-Sports Illustrative Gaming Gaming Logo.ico" />
   </ItemGroup>
 
@@ -17,6 +27,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="back2.png" />
+    <Resource Include="Firefly a background image of size 800x450 px Which shows a night view of a Indian city with some sk (1).jpg" />
+    <Resource Include="Firefly a background image of size 800x450 px Which shows a night view of a Indian city with some sk (4).jpg" />
     <Resource Include="Neon Blue White and Black E-Sports Illustrative Gaming Gaming Logo.ico" />
   </ItemGroup>
 

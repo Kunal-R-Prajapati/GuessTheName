@@ -5,19 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Guess The City" Height="450" Width="800" WindowStartupLocation="CenterScreen" AutomationProperties.Name="Guess The City" ResizeMode="NoResize" Topmost="True" Icon="/Neon Blue White and Black E-Sports Illustrative Gaming Gaming Logo.ico">
+        Title="Guess The City" Height="450" Width="800" WindowStartupLocation="CenterScreen"  ResizeMode="NoResize" Topmost="True" WindowStyle="None">
+    <Window.Background>
+        <ImageBrush ImageSource="/back2.png"/>
+    </Window.Background>
+
     <Window.Effect>
         <DropShadowEffect/>
     </Window.Effect>
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <Frame x:Name="Frame0" Content="" NavigationUIVisibility="Hidden" Visibility="Hidden" Panel.ZIndex="10" Background="White"/>
-        <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Center" Margin="0,116,0,0" VerticalAlignment="Top" Height="71" Width="140" Cursor="Hand" FontSize="48" Panel.ZIndex="1" Click="btnStart_Click"/>
-        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Center" Margin="0,259,0,0" VerticalAlignment="Top" Height="71" Width="140" Cursor="Hand" FontSize="48" Panel.ZIndex="1" Click="btnExit_Click"/>
-        <Button x:Name="btnPlayAgain" Visibility="Hidden" Content="Play Again" HorizontalAlignment="Left" Margin="99,295,0,0" VerticalAlignment="Top" Height="71" Width="231" Cursor="Hand" FontSize="48" Panel.ZIndex="100" Click="btnStart_Click"/>
-        <Button x:Name="btnExit2" Visibility="Hidden" Content="Quit" HorizontalAlignment="Left" Margin="561,295,0,0" VerticalAlignment="Top" Height="71" Width="140" Cursor="Hand" FontSize="48" Panel.ZIndex="100" Click="btnExit_Click"/>
+        <Frame x:Name="Frame0" Content="" NavigationUIVisibility="Hidden" Visibility="Hidden" Panel.ZIndex="10">
+            <Frame.Background>
+                <ImageBrush ImageSource="/back2.png"/>
+            </Frame.Background>
+        </Frame>
+        <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Center" Margin="0,116,0,0" VerticalAlignment="Top" Height="68" Width="181" Cursor="Hand" FontSize="48" Panel.ZIndex="6" Click="btnStart_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" FontFamily="Algerian"></Button>
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Center" Margin="0,259,0,0" VerticalAlignment="Top" Height="71" Width="140" Cursor="Hand" FontSize="48" Panel.ZIndex="6" Click="btnExit_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" FontFamily="Algerian"/>
+        <Button x:Name="btnPlayAgain" Visibility="Hidden" Content="Play Again" HorizontalAlignment="Left" Margin="99,295,0,0" VerticalAlignment="Top" Height="71" Width="301" Cursor="Hand" FontSize="48" Panel.ZIndex="100" Click="btnStart_Click" BorderBrush="{x:Null}" Foreground="Black" FontFamily="Algerian">
+            <Button.Background>
+                <SolidColorBrush Color="White" Opacity="0.2"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnExit2" Visibility="Hidden" Content="Quit" HorizontalAlignment="Left" Margin="561,295,0,0" VerticalAlignment="Top" Height="71" Width="140" Cursor="Hand" FontSize="48" Panel.ZIndex="100" Click="btnExit_Click" BorderBrush="{x:Null}" Foreground="Black" FontFamily="Algerian" >
+            <Button.Background>
+                <SolidColorBrush Color="White" Opacity="0.2"/>
+            </Button.Background>
+        </Button>
+        <Rectangle HorizontalAlignment="Center" Height="375" VerticalAlignment="Center" Width="699" RadiusX="58.401" RadiusY="58.401" Panel.ZIndex="5" Margin="10,10,10,10">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="White" Opacity="0.395"/>
+            </Rectangle.Fill>
+            <Rectangle.Effect>
+                <DropShadowEffect/>
+            </Rectangle.Effect>
+        </Rectangle>
 
 
     </Grid>

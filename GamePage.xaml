@@ -9,14 +9,36 @@
       Title="GamePage">
 
     <Grid Loaded="LoadGameName">
-        <TextBox x:Name="GuessedNameBox" HorizontalAlignment="Center" Margin="0,100,0,0" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" FontSize="55" Background="{x:Null}" Panel.ZIndex="10" TextAlignment="Center" IsEnabled="False" UndoLimit="0" SelectionOpacity="1" Cursor="No" BorderBrush="{x:Null}"/>
-        <TextBox x:Name="GuessedCharBox" HorizontalAlignment="Center" Margin="0,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="43" UndoLimit="0" MaxLines="1" MaxLength="1" InputScope="OneChar" Width="79" Background="White" SelectionBrush="Black" SelectionTextBrush="Black" CaretBrush="#FF5D2121" Foreground="Black" BorderBrush="Black" Height="70" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
-        <Label Content="Enter Your Guess" HorizontalAlignment="Left" Margin="36,260,0,0" VerticalAlignment="Top" FontSize="36"/>
-        <Button x:Name="CheckBtn" Content="Check" HorizontalAlignment="Left" Margin="513,266,0,0" VerticalAlignment="Top" FontSize="36" Width="128" Cursor="Hand" BorderThickness="1,1,1,1" Click="CheckBtn_Click"/>
-        <Label Content="Enter Your Guess" HorizontalAlignment="Left" Margin="36,260,0,0" VerticalAlignment="Top" FontSize="36"/>
-        <Label Content="Enter Your Guess" HorizontalAlignment="Left" Margin="36,10,0,0" VerticalAlignment="Top" FontSize="22"/>
-        <TextBox x:Name="GuessLeftBox" HorizontalAlignment="Left" Margin="222,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" UndoLimit="0" MaxLines="1" MaxLength="1" InputScope="OneChar" Background="{x:Null}" SelectionBrush="{x:Null}" SelectionTextBrush="{x:Null}" Foreground="Black" BorderBrush="{x:Null}"  Text="k" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" RenderTransformOrigin="0.387,0.214"/>
-         <Frame x:Name="Frame1" NavigationUIVisibility="Hidden" Visibility="Hidden" Background="White" Panel.ZIndex="12"/> 
+        <TextBox x:Name="GuessedNameBox" HorizontalAlignment="Center" Margin="0,105,0,0" TextWrapping="WrapWithOverflow" VerticalAlignment="Top" FontSize="55" Background="{x:Null}" Panel.ZIndex="10" TextAlignment="Center" IsEnabled="False" UndoLimit="0" SelectionOpacity="1" Cursor="No" BorderBrush="{x:Null}" Foreground="Black" TextChanged="GuessedNameBox_TextChanged" OpacityMask="Black"/>
+        <TextBox x:Name="GuessedCharBox" HorizontalAlignment="Left" Margin="397,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="43" UndoLimit="0" MaxLines="1" MaxLength="1" InputScope="OneChar" Width="79" Background="{x:Null}" SelectionBrush="Black" SelectionTextBrush="Black" CaretBrush="#FF5D2121" Foreground="Black" Height="70" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Panel.ZIndex="7" Padding="5,5,5,5" CharacterCasing="Lower" >
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" Opacity="0.7">
+                    <GradientStop Color="Black" Offset="0.423"/>
+                    <GradientStop Color="White" Offset="0"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <Button x:Name="CheckBtn" Content="Check" HorizontalAlignment="Left" Margin="560,270,0,0" VerticalAlignment="Top" FontSize="36" Width="128" Cursor="Hand" BorderThickness="1,1,1,1" Click="CheckBtn_Click" Panel.ZIndex="7" BorderBrush="{x:Null}" Foreground="Black" FontFamily="Arial Rounded MT Bold">
+            <Button.Background>
+                <SolidColorBrush Color="White" Opacity="0.5"/>
+            </Button.Background>
+        </Button>
+        <Label Content="Enter Your Guess" HorizontalAlignment="Left" Margin="88,260,0,0" VerticalAlignment="Top" FontSize="36" Foreground="White" Panel.ZIndex="7"/>
+        <Label Content="Enter Your Guess" HorizontalAlignment="Left" Margin="88,65,0,0" VerticalAlignment="Top" FontSize="22" Foreground="White"/>
+        <TextBox x:Name="GuessLeftBox" HorizontalAlignment="Left" Margin="270,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" UndoLimit="0" MaxLines="1" MaxLength="1" InputScope="OneChar" Background="{x:Null}" SelectionBrush="{x:Null}" SelectionTextBrush="{x:Null}" BorderBrush="{x:Null}"  Text="k" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" RenderTransformOrigin="0.387,0.214" Foreground="White"/>
+        <Rectangle HorizontalAlignment="Center" Height="374" VerticalAlignment="Center" Width="700" RadiusX="58.401" RadiusY="58.401" Panel.ZIndex="5" OpacityMask="Black">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="White" Opacity="0.395"/>
+            </Rectangle.Fill>
+            <Rectangle.Effect>
+                <DropShadowEffect/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Frame x:Name="Frame1" NavigationUIVisibility="Hidden" Visibility="Hidden" Panel.ZIndex="12">
+            <Frame.Background>
+                <ImageBrush ImageSource="/back2.png"/>
+            </Frame.Background>
+        </Frame>
 
     </Grid>
 </Page>

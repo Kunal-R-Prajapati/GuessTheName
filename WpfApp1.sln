@@ -5,7 +5,7 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfApp1", "WpfApp1.csproj", "{1776CFB6-6CF9-4826-A747-CD8AB6C525C9}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "GuessTheCityInstaller", "..\GuessTheCityInstaller\GuessTheCityInstaller.vdproj", "{7944CBE9-47C4-4E41-99DF-20272340A08A}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "GuessTheCity", "..\GuessTheCity\GuessTheCity.vdproj", "{63F9B403-BB17-488E-A1A5-46718BA1140A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,8 +17,9 @@ Global
 		{1776CFB6-6CF9-4826-A747-CD8AB6C525C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1776CFB6-6CF9-4826-A747-CD8AB6C525C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1776CFB6-6CF9-4826-A747-CD8AB6C525C9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7944CBE9-47C4-4E41-99DF-20272340A08A}.Debug|Any CPU.ActiveCfg = Release
-		{7944CBE9-47C4-4E41-99DF-20272340A08A}.Release|Any CPU.ActiveCfg = Release
+		{63F9B403-BB17-488E-A1A5-46718BA1140A}.Debug|Any CPU.ActiveCfg = Release
+		{63F9B403-BB17-488E-A1A5-46718BA1140A}.Debug|Any CPU.Build.0 = Release
+		{63F9B403-BB17-488E-A1A5-46718BA1140A}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

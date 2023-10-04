@@ -28,6 +28,8 @@ namespace WpfApp1
         {
             btnPlayAgain.Visibility = Visibility.Hidden;
             btnExit2.Visibility = Visibility.Hidden;
+            btnExit.Visibility = Visibility.Hidden;
+            btnStart.Visibility = Visibility.Hidden;    
             GamePage gamePageObj = new GamePage(btnPlayAgain, btnExit2);
             Frame0.Content = gamePageObj;
             Frame0.Visibility = Visibility.Visible;
